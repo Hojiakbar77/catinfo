@@ -84,6 +84,7 @@ class CatVewState extends State<CatVew> {
                     TextButton(onPressed: (){
                       context.read<CatFactoryBloc>().add(NextFactoryEvent());
                       catsTime.add(state.cats.createdAt);
+                      catsText.add(state.cats.text);
 
                     }, child: const Text("Next"))
 
